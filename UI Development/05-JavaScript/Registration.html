@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title>Registration Page</title>
+    <style>
+         body{
+         background-color: rgb(24, 201, 83);
+         display: flex;
+         font-family: sans-serif;
+        }
+
+        .Lform{
+            background-color: whitesmoke;
+            margin: auto;
+            width: 500px;
+            padding: 20px;
+            margin-top: 10%;
+            text-align: center;
+        }
+        
+        #Fp{
+            
+            background-color: rgb(54, 54, 147);
+            
+        }
+
+        a{
+            text-decoration: none;
+            color:rgb(130, 77, 236) ;
+        }
+        
+        body{
+                   text-align: center;
+                 height: 600px;
+        width: 30%;
+        margin-top: 8ch;
+        margin-left: 58ch;
+        background-color:lightgrey;
+        padding-top: 20px;
+        font-size: medium;
+        color:black;
+        background-repeat: no-repeat;
+  background-size: 1400px 800px;
+        background-repeat: repeat-y;
+        background-image: url('travellsphoto.webp'); 
+
+     
+ }
+ 
+                        .card-details {
+                            background: lightskyblue;
+                            color: black(225, 223, 233);
+                            margin: 10px 30px;
+                            line-height: 35px;
+                        padding-bottom: 1px;
+                        
+                        }
+                           
+
+
+
+    </style>
+</head>
+<body>
+	<div class="Lform">
+        <h1>Registration Form</h1>
+	<form onsubmit="return Myvalidation(this)">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<label for="confirm_password">Confirm Password:</label>
+		<input type="password" id="confirm_password" name="confirm_password"><br><br>
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" name="dob"><br><br>
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender" >
+			<option value="">Select Gender</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select><br><br>
+		<label for="address">Address:</label>
+		<textarea id="address" name="address"></textarea><br><br>
+		<input type="submit" value="Submit" id="Fp">
+    
+        <p>Not a member?<a href="Contactus.html" id="contactus">Contactus</a></p>
+        
+	</form>
+    </div>
+</body>
+<script>
+    function Myvalidation(form){
+     var Name = form.name.value;
+     var Email = form.email.value;
+     var Password = form.password.value;
+     var Cpassword = form.confirm_password.value;
+     var Address = form.address.value;
+
+     if(Name.length===0){
+        alert('please enter your name');
+        return false;
+     }
+
+     
+     if(Email.length===0){
+        alert('please enter your email address');
+        return false;
+     }
+
+     
+     if(Password.length===0){
+        alert('please enter your password');
+        return false;
+     }
+
+     
+     if(Cpassword.length===0){
+        alert('please enter your repassword');
+        return false;
+     }
+
+     if(Address.length===0){
+        alert('please enter your address');
+        return false;
+     }
+    }
+</script>
+</html>

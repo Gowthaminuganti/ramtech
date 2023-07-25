@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title>Registration, Login, and Contact Form</title>
+  <link rel="stylesheet" type="text/css" href="RLC.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form id="registration-form" action="registration.php" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+  <div class="container">
+    <h1>Login Form</h1>
+    <form id="login-form" action="login.php" method="POST">
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" name="email" required>
+      
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" name="password" required>
+      
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form id="contact-form" action="contact.php" method="POST">
+      <label for="contact-name">Name</label>
+      <input type="text" id="contact-name" name="name" required>
+      
+      <label for="contact-email">Email</label>
+      <input type="email" id="contact-email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</body>
+
+
+
+  <link rel="stylesheet" type="text/css" href="RLC.css">
+  <style>
+    body {
+      background-color: #f2f2f2; /* Set a background color for the entire page */
+    }
+
+    /* Add background color styles for each form container */
+    #registration-form {
+      background-color: #c98686; /* Set background color for the registration form */
+    }
+
+    #login-form {
+      background-color: #620b0b; /* Set background color for the login form */
+    }
+
+    #contact-form {
+      background-color: #d9d9d9; /* Set background color for the contact form */
+    }
+  </style>
+</head>
+<body>
+  <div id="registration-form">
+    <h2>Registration</h2>
+    <!-- Registration form content -->
+  </div>
+
+  <div id="login-form">
+    <h2>Login</h2>
+    <!-- Login form content -->
+  </div>
+
+  <div id="contact-form">
+    <h2>Contact Us</h2>
+    <!-- Contact form content -->
+    <form>
+  </div>
+</body>
+</html>
